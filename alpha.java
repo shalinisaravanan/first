@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-class character
+class alpha
 {
 public static void main(String args[])
 {
