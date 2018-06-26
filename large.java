@@ -12,9 +12,9 @@ public static void main(String args[])
       a[i]=sc.nextInt();
     }
     Arrays.sort(a);
-    Arrays.toString(a);
-    StringBuffer sb=new StringBuffer(a);
-    sb.reverse();
-    System.out.print(Integer.parseInt(sb));
+     for(int i=a.length-1;i>=0;i--)
+    {
+   System.out.print(a[i]);
+    }
     }
     }
