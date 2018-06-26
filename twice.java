@@ -12,15 +12,27 @@ class repeat
     {
       a[i]=sc.nextInt();
     }
-    Arrays.sort();
     for(int i=0;i<a.length-1;i++)
-    {
-    for(int j=i+1;j<a.length;j++)
-    {
+  {
+    for(int j=0;j<a.length;j++)
+  {
+      if(i!=j)
+  {
     if(a[i]!=a[j])
     {
-    System.out.print(a[i]);
-    break;
+    flag=1;
     }
+     else
+    {
+       flag=0;
+       break;
     }
-    }
+  }
+  }
+      if(flag==1)
+      {
+        System.out.print(a[i]+" "); 
+      }
+  }
+  }
+}
